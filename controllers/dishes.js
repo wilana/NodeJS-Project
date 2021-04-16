@@ -2,7 +2,7 @@ const Dish = require('../models/dish');
 
 exports.index = async (request, response, next) => {
     try {
-        const dishes = await Dish.find().populate('cuisines');
+        const dishes = await Dish.find().populate('cuisine');
 
         response.status(200).json(dishes);
     } catch (error) {
@@ -14,7 +14,7 @@ exports.show = async (request, response, next) => {
     try {
         const { id } = request.params;
 
-        const dish = await Dish.findById(id).populate('cuisines');
+        const dish = await Dish.findById(id).populate('cuisine');
 
         response.status(200).json(dish);
     } catch (error) {
