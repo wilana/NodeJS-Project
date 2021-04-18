@@ -6,13 +6,11 @@ const DishSchema = new mongoose.Schema({
         required: true
     },
     mainIngredient: {
-        type: String,
-        required: true
+        type: String
     },
     // could be minutes, hours or days...
     cookingTime: {
-        type: String,
-        required: true
+        type: String
     },
     cuisine: {
         type: mongoose.Schema.Types.ObjectId,
