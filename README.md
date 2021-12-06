@@ -10,3 +10,5 @@ Dish:
 - mainIngredient (String)
 - cookingTime (String to specify minutes/hours/days)
 - cuisine (id from cuisine)
+
+Grade: 109% (bonus for adding authentication)
